@@ -1,9 +1,0 @@
-.profile__name_open{
-    cursor: pointer;
-    padding-left: 18px;
-}
-@media screen and (max-width: 767px) {
-    .profile__name_open{
-        max-width: 18px;
-    }
-}
