@@ -1,0 +1,8 @@
+.profile__name_popup-open{
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .profile__name_popup-open{
+        max-width: 18px;
+    }
+}

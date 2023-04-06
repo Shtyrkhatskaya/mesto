@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page/index.css" />
+    <title>Mesto</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="images/logo_head.svg" alt="Логотип" class="header__logo" />
+      </header>
+      <main>
+        <section class="profile">
+          <div class="profile__information">
+            <img src="images/avatar.png" alt="Аватар" class="profile__avatar" />
+            <div class="profile__info">
+              <p class="profile__name">Жак-Ив Кусто
+                <img
+                  src="images/edit_button.svg"
+                  alt="Изменить"
+                  class="profile__name_popup-open"
+                />
+              </p>
+              <p class="profile__about">Исследователь океана</p>
+            </div>
+          </div>
+          <button type="button" class="add-button">
+            <img src="images/button.png" alt="Кнопка" class="add-button__img" />
+          </button>
+        </section>
+
+        <section class="elements">
+          <div class="element">
+            <img
+              src="images/place_1.png"
+              alt="Башня на горе"
+              class="element__photo"
+            />
+            <div class="element__comment">
+                <p class="element__place">Карачаевск</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              src="images/place_2.png"
+              alt="Эльбрус"
+              class="element__photo"
+            />
+            <div class="element__comment">
+                <p class="element__place">Гора Эльбрус</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+          <div class="element">
+            <img src="images/place_3.png" alt="Домбай" class="element__photo" />
+            <div class="element__comment">
+                <p class="element__place">Домбай</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+          <div class="element">
+            <img
+              src="images/place_2.png"
+              alt="Эльбрус"
+              class="element__photo"
+            />
+            <div class="element__comment">
+                <p class="element__place">Гора Эльбрус</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+          <div class="element">
+            <img src="images/place_3.png" alt="Домбай" class="element__photo" />
+            <div class="element__comment">
+                <p class="element__place">Домбай</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+          <div class="element">
+            <img src="images/place_1.png" alt="" class="element__photo" />
+            <div class="element__comment">
+                <p class="element__place">Карачаевск</p>
+                <img src="images/like.svg" alt="Лайк" class="element__like">
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
+      </footer>
+    </div>
+    <div class="popup">
+        <div class="popup__container">
+            
+            <form class="form">
+                <h3 class="form__header">Редактировать профиль</h3>
+                <fieldset class="form__contact-info">
+                    <input class="form__text form__text-name" type="text" placeholder="Имя">
+                    <input class="form__text form__text-about" type="text" placeholder="О себе">
+                </fieldset>
+                <input type="submit" class="form__button" placeholder="Сохранить">
+            </form>
+            <img src="images/close_icon.svg" alt="Кнопка закрытия" class="popup__close">
+        </div>
+    </div>
+    <script src="page/index.js"></script>
+  </body>
+</html>

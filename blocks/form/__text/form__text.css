@@ -1,0 +1,9 @@
+.form__text{
+    all: unset;
+    width: 100%;
+    min-height: 27px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+}
