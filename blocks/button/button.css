@@ -1,7 +1,8 @@
-.element__like{
+.button{
+    all: unset;
     cursor: pointer;
     transition: opacity linear .2s;
 }
-.element__like:hover{
-    opacity: 0.5;
+.button:hover{
+    opacity: 0.6;
 }

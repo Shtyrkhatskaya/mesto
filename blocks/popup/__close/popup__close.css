@@ -5,6 +5,7 @@
     z-index: 1;
     cursor: pointer;
     transition: opacity linear .2s;
+    line-height: 0;
 }
 .popup__close:hover{
     opacity: 0.6;
