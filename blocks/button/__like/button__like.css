@@ -1,4 +1,6 @@
 .button__like{
+    all: unset;
+    cursor: pointer;
     min-width: 22px;
     min-height: 19px;
     background-image: url(../../../images/like.svg);
