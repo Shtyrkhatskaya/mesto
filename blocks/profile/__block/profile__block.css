@@ -1,4 +1,5 @@
 .profile__block{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }

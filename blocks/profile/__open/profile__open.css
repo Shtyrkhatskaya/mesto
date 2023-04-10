@@ -1,10 +1,16 @@
 .profile__open{
+    all: unset;
     cursor: pointer;
-    padding-left: 18px;
+    margin-left: 18px;
+    border: 1px solid #fff;
+    min-width: 23px;
+    aspect-ratio: 1/1;
+    /* text-align: center; */
+    position: relative;
 }
 @media screen and (max-width: 767px) {
     .profile__open{
         max-width: 18px;
-        padding-left: 10px;
+        margin-left: 10px;
     }
 }

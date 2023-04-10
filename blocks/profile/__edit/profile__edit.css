@@ -1,0 +1,14 @@
+.profile__edit{
+  max-width: 10px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 767px) {
+  .profile__edit{
+      max-width: 7.5px;
+  }
+}
+
