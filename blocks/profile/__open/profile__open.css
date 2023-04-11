@@ -10,7 +10,7 @@
 }
 @media screen and (max-width: 767px) {
     .profile__open{
-        min-width: 17px;
+        min-width: 16px;
         margin-left: 10px;
     }
 }
