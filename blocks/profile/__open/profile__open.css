@@ -5,8 +5,11 @@
     border: 1px solid #fff;
     min-width: 23px;
     aspect-ratio: 1/1;
-    /* text-align: center; */
     position: relative;
+    transition: opacity linear .2s;
+}
+.profile__open:hover{
+  opacity: .6;
 }
 @media screen and (max-width: 767px) {
     .profile__open{
