@@ -12,6 +12,7 @@
       <header class="header">
         <img src="images/logo_head.svg" alt="Логотип" class="header__logo" />
       </header>
+
       <main>
         <section class="profile">
           <div class="profile__information">
@@ -19,7 +20,7 @@
             <div class="profile__info">
               <div class="profile__block">
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
-                <button type="button" class=" profile__open">
+                <button type="button" class="profile__open">
                   <img
                     src="images/edit_button.svg"
                     alt="Изменить"
@@ -30,70 +31,10 @@
               <p class="profile__about">Исследователь океана</p>
             </div>
           </div>
-          <button type="button" class="add-button">
-          </button>
+          <button type="button" class="add-button"></button>
         </section>
 
-        <section class="elements">
-          <article class="element">
-            <img
-              src="images/place_1.png"
-              alt="Башня на горе"
-              class="element__photo"
-            />
-            <div class="element__comment">
-              <h2 class="element__place">Карачаевск</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-          <article class="element">
-            <img
-              src="images/place_2.png"
-              alt="Эльбрус"
-              class="element__photo"
-            />
-            <div class="element__comment">
-              <h2 class="element__place">Гора Эльбрус</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-          <article class="element">
-            <img src="images/place_3.png" alt="Домбай" class="element__photo" />
-            <div class="element__comment">
-              <h2 class="element__place">Домбай</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-          <article class="element">
-            <img
-              src="images/place_2.png"
-              alt="Эльбрус"
-              class="element__photo"
-            />
-            <div class="element__comment">
-              <h2 class="element__place">Гора Эльбрус</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-          <article class="element">
-            <img src="images/place_3.png" alt="Домбай" class="element__photo" />
-            <div class="element__comment">
-              <h2 class="element__place">Домбай</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-          <article class="element">
-            <img
-              src="images/place_1.png"
-              alt="Башня на горе"
-              class="element__photo"
-            />
-            <div class="element__comment">
-              <h2 class="element__place">Карачаевск</h2>
-              <button type="button" class="element__like"></button>
-            </div>
-          </article>
-        </section>
+        <section class="elements"></section>
       </main>
 
       <footer class="footer">
@@ -129,6 +70,67 @@
         </form>
       </div>
     </div>
+
+    <div class="popup-place">
+      <div class="popup-place__container">
+        <button type="button" class="button">
+          <img
+            src="images/close_icon.svg"
+            alt="Кнопка закрытия"
+            class="popup-place__close"
+          />
+        </button>
+        <h3 class="popup__header">Новое место</h3>
+        <form class="form-place" name="profile">
+          <fieldset class="form-place__contact-info">
+            <input
+              name="name"
+              class="form__text form-place__text_type_place"
+              type="text"
+              placeholder="Название"
+            />
+            <input
+              name="profession"
+              class="form__text form-place__text_type_link"
+              type="text"
+              placeholder="Ссылка на картинку"
+            />
+          </fieldset>
+          <input type="submit" class="form__button" value="Сохранить" />
+        </form>
+      </div>
+    </div>
+
+    <div class="popup-img">
+      <div class="popup-img__container">
+        <button type="button" class="button">
+          <img
+            src="images/close_icon.svg"
+            alt="Кнопка закрытия"
+            class="popup-img__close"
+          />
+        </button>
+        <figure class="popup__figure">
+          <img class="element__photo_open" crs=""/>
+          <figcaption class="element__place_open"></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <template id="element-template">
+      <article class="element">
+        <img class="element__photo" />
+        <div class="element__comment">
+          <h2 class="element__place"></h2>
+          <button type="button" class="element__like"></button>
+        </div>
+        <img
+          src="images/delete.svg"
+          alt="Иконка удаления"
+          class="element__delete"
+        />
+      </article>
+    </template>
     <script src="scripts/index.js"></script>
   </body>
 </html>

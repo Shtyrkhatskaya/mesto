@@ -1,0 +1,20 @@
+.popup-place__container{
+    max-width: 430px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 0;
+}
+@media screen and (max-width: 767px) {
+    .popup-place__container{
+        max-width: 282px;
+        max-height: 322px;
+    }
+}
