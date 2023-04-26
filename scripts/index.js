@@ -127,8 +127,8 @@ const createData = (elementData) => {
 
  // Открытие попапа с картинкой
  const popupImg = document.querySelector('.popup-img');
- const openPictureLink = document.querySelector('.element__photo_open');
- const openPictureName = document.querySelector('.element__place_open');
+ const openPictureLink = document.querySelector('.popup-img__photo_open');
+ const openPictureName = document.querySelector('.popup-img__place_open');
 
  function openPicture () {
    popupImg.classList.add('popup-img_open');

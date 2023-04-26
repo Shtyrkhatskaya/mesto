@@ -45,10 +45,14 @@
 @import url(../blocks/popup-place/__container/popup-place__container.css);
 @import url(../blocks/popup-place/_opened/popup-place_opened.css);
 @import url(../blocks/popup-place/__close/popup-place__close.css);
+@import url(../blocks/popup-place/__header/popup-place__header.css);
 
 @import url(../blocks/popup-img/popup-img.css);
 @import url(../blocks/popup-img/_open/popup-img_open.css);
 @import url(../blocks/popup-img/__container/popup-img__container.css);
+@import url(../blocks/popup-img/__figure/popup-img__figure.css);
+@import url(../blocks/popup-img/__photo/_open/popup-img__photo_open.css);
+@import url(../blocks/popup-img/__place/_open/popup-img__place_open.css);
 
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__text/form__text.css);
@@ -57,5 +61,7 @@
 
 @import url(../blocks/form-place/form-place.css);
 @import url(../blocks/form-place/__contact-info/form-place__contact-info.css);
+@import url(../blocks/form-place/__text/form-place__text.css);
+@import url(../blocks/form-place/__button/form-place__button.css);
 
 @import url(../blocks/button/button.css);
