@@ -1,9 +1,0 @@
-.form-place{
-  max-width: 358px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 767px) {
-  .form-place{
-      max-width: 238px;
-  }
-}

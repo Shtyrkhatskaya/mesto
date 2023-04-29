@@ -41,7 +41,8 @@
         <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
       </footer>
     </div>
-    <div class="popup">
+
+    <div class="popup popup-profile">
       <div class="popup__container">
         <button type="button" class="button">
           <img
@@ -71,48 +72,48 @@
       </div>
     </div>
 
-    <div class="popup-place">
-      <div class="popup-place__container">
+     <div class="popup popup-place">
+      <div class="popup__container">
         <button type="button" class="button">
           <img
             src="images/close_icon.svg"
             alt="Кнопка закрытия"
-            class="popup-place__close"
+            class="popup__close"
           />
         </button>
-        <h3 class="popup-place__header">Новое место</h3>
-        <form class="form-place" name="profile">
-          <fieldset class="form-place__contact-info">
+        <h3 class="popup__header">Новое место</h3>
+        <form class="form form-place" name="profile">
+          <fieldset class="form__contact-info">
             <input
               name="name"
-              class="form-place__text form-place__text_type_place"
+              class="form__text form__text_type_place"
               type="text"
               placeholder="Название"
             />
             <input
               name="profession"
-              class="form-place__text form-place__text_type_link"
+              class="form__text form__text_type_link"
               type="text"
               placeholder="Ссылка на картинку"
             />
           </fieldset>
-          <input type="submit" class="form-place__button" value="Сохранить" />
+          <input type="submit" class="form__button" value="Сохранить" />
         </form>
       </div>
     </div>
 
-    <div class="popup-img">
+    <div class="popup popup-img">
       <div class="popup-img__container">
         <button type="button" class="button">
           <img
             src="images/close_icon.svg"
             alt="Кнопка закрытия"
-            class="popup-img__close"
+            class="popup__close popup-img__close"
           />
         </button>
-        <figure class="popup-img__figure">
-          <img class="popup-img__photo" crs=""/>
-          <figcaption class="popup-img__place"></figcaption>
+        <figure class="popup__figure">
+          <img class="popup__photo popup-img__photo" crs=""/>
+          <figcaption class="popup__place popup-img__place"></figcaption>
         </figure>
       </div>
     </div>

@@ -1,23 +1,9 @@
 .popup-img__close{
-  position: absolute;
     top: -18px;
     right: -40px;
-    z-index: 1;
-    cursor: pointer;
-    transition: opacity linear .2s;
-    line-height: 0;
-
-}
-.popup__close-img:hover{
-  opacity: 0.6;
 }
 @media screen and (max-width: 767px) {
   .popup-img__close{
-      /* right: 0; */
-      /* top: -36px;
-      max-width: 20px; */
-      max-width: 20px;
-      max-height: 20px;
       top: -6px;
       right: 0;
   }
