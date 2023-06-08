@@ -54,18 +54,34 @@
         <h3 class="popup__header">Редактировать профиль</h3>
         <form class="form" name="profile">
           <fieldset class="form__contact-info">
+            <label class="popup__input-element">
             <input
               name="name"
+              id="name"
               class="form__text form__text_type_name"
               type="text"
               placeholder="Имя"
+              minlength="2"
+              maxlength="40"
+              required
             />
+            <span class="name-error popup__error"></span>
+          </label>
+
+          <label class="popup__input-element">
             <input
               name="profession"
+              id="job"
               class="form__text form__text_type_about"
               type="text"
               placeholder="О себе"
+              minlength="2"
+              maxlength="200"
+              required
             />
+            <span class="job-error popup__error"></span>
+          </label>
+
           </fieldset>
           <input type="submit" class="form__button" value="Сохранить" />
         </form>
@@ -84,18 +100,29 @@
         <h3 class="popup__header">Новое место</h3>
         <form class="form form-place" name="profile">
           <fieldset class="form__contact-info">
+            <label class="popup__input-element">
             <input
               name="name"
+              id="place"
               class="form__text form__text_type_place"
               type="text"
               placeholder="Название"
+              minlength="2" maxlength="30" required
             />
+            <span class="place-error popup__error"></span>
+          </label>
+
+          <label class="popup__input-element">
             <input
               name="profession"
+              id="linkImage"
               class="form__text form__text_type_link"
               type="text"
               placeholder="Ссылка на картинку"
+              required
             />
+            <span class="linkImage-error popup__error"></span>
+          </label>
           </fieldset>
           <input type="submit" class="form__button" value="Сохранить" />
         </form>
@@ -132,6 +159,7 @@
         />
       </article>
     </template>
+    <script src="scripts/validation.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

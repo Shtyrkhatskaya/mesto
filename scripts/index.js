@@ -25,15 +25,44 @@ const popupImg = document.querySelector('.popup-img');
 const openPictureLink = document.querySelector('.popup-img__photo');
 const openPictureName = document.querySelector('.popup-img__place');
 
+//закрытие на esc
+const closePressTheEsc = (evt) => {
+  if (evt.key === 'Escape') {
+    const popupEsc = document.querySelector('.popup_opened');
+    closePopup(popupEsc);
+  }
+}
+
+
+//закрытие по оверлею
+function closePopupOverlay(evt){
+  if (evt.target === evt.currentTarget){
+    closePopup(evt.target);
+  }
+};
+
+popupProfile.addEventListener('click', (evt) => {
+  closePopupOverlay(evt);
+})
+
+popupPlace.addEventListener('click', (evt) => {
+  closePopupOverlay(evt);
+})
+
+popupImg.addEventListener('click', (evt) => {
+  closePopupOverlay(evt);
+})
+
 
 // Универсальное открытие, закрытие и сохранение попапов
 function openPopup (popupElement) {
   popupElement.classList.add('popup_opened');
+  document.addEventListener('keydown', closePressTheEsc);
 }
 function closePopup (popupElement) {
   popupElement.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closePressTheEsc);
 }
-
 
 // Открытие, закрытие и сохранение попапа с редактиванием профиля
 function openPopupProfileEdit () {
@@ -162,3 +191,11 @@ initialCards.forEach((card) => {
   const oneCard = createData(card);
   elementsContainer.prepend(oneCard);
 })
+
+// // Валидация форм
+// const formProfileValidator = new FormValidator(configValidation, formEditProfile);
+// formProfileValidator.enableValidation();
+
+// const formAddValidator = new FormValidator(configValidation, formAddCard);
+// formAddValidator.enableValidation();
+
