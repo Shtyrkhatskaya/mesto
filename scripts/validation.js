@@ -1,7 +1,7 @@
 //проверка валидации
 const checkInputValidity = (formElement, inputElement, obj) => {
   if (!inputElement.validity.valid) {
-    InputError(formElement, inputElement, inputElement.validationMessage, obj);
+    inputError(formElement, inputElement, inputElement.validationMessage, obj);
   } else {
     noneInputError(formElement, inputElement, obj);
   }
@@ -25,7 +25,7 @@ const activateButton = (buttonElement, obj) => {
 };
 
 //показать ошибку
-const InputError = (formElement, inputElement, errorMessage, obj) => {
+const inputError = (formElement, inputElement, errorMessage, obj) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   inputElement.classList.add(obj.inputErrorClass);
   errorElement.textContent = errorMessage;

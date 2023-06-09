@@ -1,5 +1,5 @@
 const openPopupBtn = document.querySelector('.profile__open');
-const popup = document.querySelectorAll('.popup');
+const popups = document.querySelectorAll('.popup');
 const closePopupBtn = document.querySelectorAll('.popup__close');
 const popupProfile = document.querySelector('.popup-profile');
 
@@ -97,8 +97,11 @@ openPopupBtn.addEventListener('click', openPopupProfileEdit);
 
 // Открытие, закрытие и сохранение попапа для добавления карточки с новым местом
 function openPopupPlace () {
+  formElementPlace.reset();
+  passiveButton(popupPlace.querySelector('.form__button'), { inactiveButtonClass: 'form__button_inactive' });
   openPopup(popupPlace);
 }
+
 
 function handlePlaceFormSubmit (evt) {
   evt.preventDefault();
